@@ -1,0 +1,66 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header .navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-rows: minmax();
+    align-items: center;
+    z-index: 1;
+}
+
+header .navbar .compnylogo {
+    margin-left: 30px;
+}
+
+header .navbar .links {
+    justify-content: space-between;
+}
+
+header .navbar .link {
+    font-size: larger;
+    font-weight: bold;
+    margin: 0px 5px;
+    text-decoration: none;
+    color: rgb(63, 49, 152);
+}
+.heading h1{
+    margin-top: 80px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+
+}
+.course
+.block{
+    
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px; /* Optional: Add rounded corners to the white box */
+    width: 300px; /* Set a fixed width for each box, adjust as needed */
+    box-sizing: border-box; 
+
+    }
+.course h2{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+.course  p{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
