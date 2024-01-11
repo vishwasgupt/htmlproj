@@ -14,16 +14,18 @@
 </head>
 
 <body>
-  <header>
+  <header id="home">
     <div class="navbar">
       <img src="./resources/download (1).jpg" class="compnylogo" alt="logo1" height="70" width="120" />
       <img src="./resources/logo/hader/logo_tepl_final_22.07-1-1536x579.png" class="tepl" alt="logo2" height="45"
         width="120" />
       <nav class="links">
-        <a href="#" class="link">Home</a>
-        <a href="#" class="link">About Us</a>
-        <a href="#" class="link">Courses</a>
-        <a href="#" class="link">Contact Us</a>
+        <a href="#/home" onclick="rout(this)" class="link">Home</a>
+        <a href="#/about" class="link" onclick="rout(this)">About Us</a>
+        <a href="#/courses
+        " class="link" onclick="rout(this)">Courses</a>
+        <a href="#/contectus" class="link" onclick="rout(this)">Contact Us</a>
+        <a href="#/location" class="link" onclick="rout(this)">Location</a>
       </nav>
 
       <img src="./resources/logo/hader/Tally-Logo-with-Trademark-1024x507.png" class="tally" alt="logo3" height="80"
@@ -79,7 +81,7 @@
         </div>
       </div>
     </div>
-    <div class="shortnote">
+    <div class="shortnote" id="about1">
       <p class="heading">Why Choose Us</p>
       <div class="context">
         <p>
@@ -89,11 +91,10 @@
         </p>
       </div>
     </div>
-    <div class="About">
+    <div class="About" id="about">
       <div class="dropdonws">
         <div class="first" id="fir">
           <button class="skill" id="sk1">Our Team</button>
-
           <div class="p1">
             <p>
               Established in Alwar in 2008, Net Expert has been a pioneering
@@ -155,7 +156,7 @@
       </div>
     </div>
 
-    <div class="courses">
+    <div class="courses" id="courses">
       <div class="divider">
         <hr />
         <span>courses</span>
@@ -215,39 +216,67 @@
 
     <div class="divider">
       <hr />
-      <span style="width: 150px;"><img src="./resources/icons8-location.gif" alt="location" width="21PX" style="border-radius:8px ;"/> Locate
+      <span style="width: 150px;"><img src="./resources/icons8-location.gif" alt="location" width="21PX"
+          style="border-radius:8px ;" /> Locate
         Us</span>
     </div>
 
-    <div class="container3">
-      <img class="img1" src="./resources/maplocation.png" alt="locaton" style="border-radius: 8px;"/>
+    <div class="container3" id="location">
+      <img class="img1" src="./resources/maplocation.png" alt="locaton" style="border-radius: 8px;" />
+    </div>
+
+    <div class="contaner4" style="margin-left: 60px;">
+      <div>
+        <p style="width: 400px; color: rgb(134, 126, 126);">
+          " Certainly! To provide you with a more tailored response, could you please provide me with some specific
+          details about your institute? For instance, you can share information about its name, location, mission,
+          programs offered, unique features, or any other relevant details you'd like me to include in the write-up."</p>
+      </div>
+      <div></div>
     </div>
   </main>
 
-
   <footer>
-    <div class ="about"></div>
-    <div class="Course">
-      <div class="text">
-        <p style="font-size: 30px;margin-bottom: -2px;">Courses</p>
-        <p>Tally</p>
-        <p>Racl</p>
-        <p>C/C++</p>
-        <p>Web Development/Designiing</p>
+    <div class="footer-container">
+      <div class="footer-content">
+        <h3>Contact Information</h3>
+        <p>Email: info@example.com</p>
+        <p>Phone: +123456789</p>
+      </div>
+      <div class="footer-content">
+        <h3>Website Development</h3>
+        <p>Designed and Developed by:</p>
+        <p class="developer-info" style="line-height: 24.4px;">
+          <strong>Vishwas Gupta</strong><br>
+          CEO, Example Web Solutions<br>
+          Email: viswasmac98@gmail.com<br>
+          Phone: +91-7742639213
+        </p>
+      </div>
+      <div class="footer-content">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#/home" onclick="rout(this)">Home</a></li>
+          <li><a href="#/about" onclick="rout(this)">About Us</a></li>
+          <li><a href="#/courses" onclick="rout(this)">Courses</a></li>
+          <li><a href="#/contactus" onclick="rout(this)">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><img src="./resources/logo/sociallink/facebook-new.png" alt="Facebook" /></a>
+          <a href="#"><img src="./resources/logo/sociallink/instagram-new--v1.png" alt="Twitter" /></a>
+          <a href="#"><img src="./resources/logo/sociallink/linkedin.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="./resources/logo/sociallink/instagram-new--v1.png" alt="Instagram" /></a>
+        </div>
       </div>
     </div>
-    <div class="location">
-      <img src="./resources/maplocation.png" alt="img" height="250px" width="300px" style="margin: 10px; border-radius: 3px;"/>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Your Institute Name. All rights reserved.</p>
     </div>
-    <div class="ContectUs">
-      <div class="text">
-        <p>Contect Us</p>
-        <p>+91-1234567890</p>
-        <p>xyz@gmail.com</p>
-      </div>
-    </div>
-</footer>
-<script src="./js/aip.js"></script>
+  </footer>
+  
   <script src="./js/jquery-3.7.1.js"></script>
   <script src="./js/main.js"></script>
 </body>
