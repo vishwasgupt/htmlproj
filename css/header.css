@@ -1,0 +1,424 @@
+body {
+
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-rows: minmax();
+    align-items: center;
+    z-index: 1;
+}
+
+header .navbar .compnylogo {
+    margin-left: 30px;
+}
+
+header .navbar .links {
+    justify-content: space-between;
+}
+
+header .navbar .link {
+    font-size: larger;
+    font-weight: bold;
+    margin: 0px 5px;
+    text-decoration: none;
+    color: rgb(63, 49, 152);
+}
+
+
+main .container .image .translayer {
+    background-color: black;
+    position: absolute;
+    width: 100vw;
+    height: 510px;
+    opacity: 0.5;
+    transform: translateY(-513px);
+    box-shadow: 0px 0px 0px 8px #eeff00;
+    ;
+}
+
+main .socilalinkcontainer {
+    position: fixed;
+    top: 30vh;
+    right: 0;
+    left: auto;
+    z-index: 1;
+}
+
+main .socilalinkcontainer .Sociallink {
+    display: flex;
+    flex-direction: column;
+
+}
+
+main .Inquerybtn .btn {
+    width: 200px;
+    height: 50px;
+    position: fixed;
+    top: 50vh;
+    left: -76px;
+    transform: rotate(90deg);
+    background-image: linear-gradient(180deg, #2CCAC8 0%, #023D6F 100%);
+    font-family: "Roboto", Sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 3px #00ffff;
+    padding: 13px 32px 14px 32px;
+    transition: all .2s ease-in-out;
+    z-index: 1;
+}
+
+
+main .Inquery .btn .handlogo {
+    height: 20px;
+    position: relative;
+    top: 7px;
+}
+
+main .Inquerybtn .btn:hover {
+    transform: scale(0.9) translate(70px);
+    box-shadow: 0px 0px 35px 3px #00ffff;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    transition: all .4s;
+    transform: translateY(-100%);
+
+}
+
+main .overlay .inqueryform {
+    display: flex;
+    height: 70%;
+    width: 40%;
+    position: relative;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+.overlay .inqueryform .btn {
+    display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background-color: #f77c4a; /* Button background color */
+  color: #fff; /* Text color */
+  border-radius: 2px; /* Border radius for rounded corners */
+  transition: background-color 0.3s; /* Border radius for rounded corners */
+  position: absolute; 
+  z-index: 2;
+    top:20px;
+    right: 20px;
+}
+  
+  /* Hover effect */
+ .overlay .inqueryform .btn:hover {
+    background-color: #2980b9; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
+main .overlay .projimg {
+    width: 94%;
+    position: absolute;
+    margin: 5% 5%;
+    height: 94%;
+}
+
+main .overlay .inqueryform .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+main .overlay .inqueryform .input .p {
+    font-size: 42px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #E21143, #FFB03A);
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradientAnimation 3s infinite;
+}
+
+main .overlay .inqueryform .input .t1,
+.t2,
+.subtn {
+    position: relative;
+    margin: 6%;
+}
+
+main .overlay .inqueryform .input .t1,
+.t2,
+.subtn {
+    height: 5vh;
+    width: 32vw;
+    border-radius: 4px;
+    border-style: none;
+    outline: none;
+}
+
+main .overlay .inqueryform .input .subtn {
+    background-color: #3498db;
+    color: white;
+}
+
+main .active {
+    pointer-events: all;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+main .About {
+    margin-top: 50px;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    
+}
+
+main .About .dropdonws {
+    width: 50%;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+
+main .About .dropdonws .first .skill {
+
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    padding: 15px 25px;
+    /* Adjusted padding for increased width */
+    margin: 10px 0;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease-in-out;
+    width: 457px;
+
+}
+
+main .About .dropdonws .first .skill:hover {
+    background-color: #c0392b;
+}
+
+main .About .dropdonws .first .p1,
+.p2,
+.p3,
+.p4 {
+    grid-column-start: 0;
+    grid-column-end: 1;
+    
+    visibility: hidden;
+    margin-left: 10px;
+    margin-top: 0px;
+    width: 90%;
+    height:0px ;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+main .About .dropdonws .first .pactive {
+    height:180px;
+    visibility: visible;
+}
+.first p{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: 800;
+    color: hsl(0, 26%, 52%); /* Pink color */
+}
+.youtube-video {
+    width: 50%;
+    height:50vh;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-right: 30px;
+    padding: 0 20px;
+    
+}
+
+.youtube-video iframe {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: -1;
+}
+
+.courses
+{
+    margin-top: 70px;
+    
+}
+.divider {
+    text-align: center;
+    margin: 30px 0;
+    color: #555; /* Change the color as needed */
+}
+
+.divider hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #777, transparent);
+    margin: 0;
+}
+
+.divider span {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: white; /* Set background color to match your page background */
+    padding: 0 20px;
+    position: relative;
+    top: -18px; /* Adjust the top position to center the text */
+    left:-13px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.java {
+    color: #f39c12;
+}
+
+
+
+.card h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+.shortnote {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 77px;
+    margin-bottom: -20px;
+    text-align: center;
+  }
+  
+  .heading {
+  font-size: 28px; /* Updated font size */
+  font-weight: bold; /* Added font weight for a bolder style */
+  color: #333;
+  margin-bottom: -12px;
+  }
+  
+  .context p {
+    font-size: 20px; /* Updated font size */
+    line-height: 1.4; /* Adjusted line height for better readability */
+    color: rgb(155, 148, 148); /* Updated text color to a deep blue (#006699) */
+    font-style: italic; /* Added italic style */
+    font-family: 'Arial', sans-serif; /* Updated font family */
+    font-weight: 600;
+    width: 900px;
+    margin-left: -154px;
+  }
+  
+  .container3
+  {
+    margin-top: -10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .container3 .img1{
+    height: 400px;
+    width: 100%;
+    margin-top: -16px;
+    border-radius: 4px;
+
+  }
+
+footer
+{
+    background-color: rgb(57, 55, 55);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    height:auto;
+}
+
+footer .about,.Course,.location,.ContectUs
+{
+    
+}
+
+footer .ContectUs .text p
+{
+    margin-left: 30px;
+    color:white;
+    margin-top: 10px;
+}
+
+footer p{
+    margin-left: 30px;
+    color:white;
+    margin-top: 10px;  
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
