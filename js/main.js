@@ -43,13 +43,22 @@ over.addEventListener('click', function (e) {
 
 })
 
-document.body.addEventListener('click', (event) => {
-    
-    if (!event.target.classList.contains('skill') && !event.target.closest('.pactive')) {    
-        t();
-    }
-});
 
 inqueryclose.addEventListener('click', function(){
     over1.classList.remove('active');
 })
+
+
+//router
+
+function rout(ru)
+{
+console.log(ru);
+const str = ru.getAttribute("href");
+
+
+const get=str.split(/[#,'/']/);
+const stearr = get[2];
+document.querySelector('#'+stearr).scrollIntoView({behavior:"smooth",block:"end",inline:"start"})
+
+}
